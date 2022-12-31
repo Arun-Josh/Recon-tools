@@ -33,6 +33,6 @@ RECON_DOMAIN=$1
 # set up the directory structure
 mkdir -p $OUTDIR/$RECON_DOMAIN/screen/
 
-EyeWitness --web --threads 10 --prepend-https -f $OUTDIR/$RECON_DOMAIN/subdomain-recon/$RECON_DOMAIN-subdomains.txt -d $OUTDIR/$RECON_DOMAIN/screen/ --no-prompt
+eyewitness --web --threads 10 --prepend-https -f $OUTDIR/$RECON_DOMAIN/subdomain-recon/$RECON_DOMAIN-subdomains.txt -d $OUTDIR/$RECON_DOMAIN/screen/ --no-prompt
 
 push_to_slack
